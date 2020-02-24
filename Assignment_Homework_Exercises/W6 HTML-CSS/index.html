@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Week 6</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <style>
+{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: rgb(161, 59, 59);
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: rgb(244, 255, 97);
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #ffffff;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: rgb(102, 48, 48);
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+    table 
+    {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    td,th 
+    {
+      border: 1px solid #a33535;
+      text-align: left;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #a33535;
+    }
+      </style>
+      </head>
+
+  <body>
+    <h2>Michael Jordan</h2>
+ <header>
+        <img
+        height="400"
+        width="800"
+        src="https://topbet.eu/news/wp-content/uploads/2016/02/Top-10-Michael-Jordan-Dunks_v2-1-640x352.jpg"
+      />
+      
+      <h2><a href="https://en.wikipedia.org/wiki/Michael_Jordan" target="_blank">Michael '23' Jordan</a></h2>
+    </header>
+    <section>
+      <nav>
+            <h2>Championships Year</h2>
+            <h3>First 3 peat</h3>
+            <li>1991</li>
+            <li>1992</li>
+            <li>1993</li>
+            <h3>Second 3 peat</h3>
+            <li>1995</li>
+            <li>1996</li>
+            <li>1997</li>
+      </nav>
+      
+      <article>
+        <h1>History</h1>
+        <p>Michael Jeffrey Jordan (born February 17, 1963), also known by his initials MJ, is an American former professional basketball player and the principal owner of the Charlotte Hornets of the National Basketball Association (NBA). </p>
+        <p>He played 15 seasons in the NBA, winning six championships with the Chicago Bulls.</p>
+        <p><div>
+            <table>
+              <tr>
+                <td colspan="2">Get to know Jordan</td>
+              </tr>
+      
+              <tr>
+                <th>Full Name</th>
+                <td>Michael Jeffrey Jordan</td>
+              </tr>
+              <tr>
+                <th>Status</th>
+                <td>Retired</td>
+              </tr>
+              <tr>
+                <th>Team</th>
+                <td>Chicago Bulls</td>
+              </tr>
+              <tr>
+                <th>Championships</th>
+                <td>6</td>
+              </tr>
+            </table>
+          </div></p>
+      </article>
+    </section>
+    
+    <footer>
+      <p>Epson Ronquillo</p>
+    </footer>
+  </body>
+</html>

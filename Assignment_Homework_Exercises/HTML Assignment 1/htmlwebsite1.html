@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <title>My Assignment 1</title>
+  <head>
+    <style>
+      div {
+      background-color: #1c87c9;
+      color: #fff;
+     padding: 500px; 
+      }
+      p {
+      -moz-animation: marquee 55s linear infinite;
+      -webkit-animation: marquee 55s linear infinite;
+      animation: marquee 55s linear infinite;
+      }
+      @-moz-keyframes marquee {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+      }
+      @-webkit-keyframes marquee {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+      }
+      @keyframes marquee {
+      0% { 
+      -moz-transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%) }
+      100% { 
+      -moz-transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%); }
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p><b>This is my assginment 1</b></p>
+    </div>
+  </body>
+</html>
