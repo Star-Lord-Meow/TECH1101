@@ -10,8 +10,9 @@ function submit() {
     const c = 150473;
     const d = 214368;
     let input1 = Number(document.getElementById("anyNumber1").value); //no need to declare a const = "anyNumber1" because you can call id right away from html. Lesson learned from your comment on my previous assignment.
-    const empty = document.getElementById("anyNumber1").value;
-    if(empty == ""){//if your input is null
+    let empty = document.getElementById("anyNumber1").value;
+
+    if(empty.trim(empty) === ""){//if your input is null or white spaces. this trim is only for spaces before and after the input number. "".length" is no an option either. this is not a perfect validation. i really want to learn how to do it without tweaking the html code or inputing the other special characters like /^\s*$/, in the code. if you have an idea please teach me.
         display4.textContent = "Error: Enter a number";
     }else if (input1 <= a){ //if input1 is less than or = to 48535.
         const compu2 = (input1-0)*.15;
@@ -57,7 +58,7 @@ function submit() {
         display.textContent = "$" + totalCompu.toFixed(2);
         display2.textContent = etr.toFixed(2);
         display3.textContent = "$" + returnE.toFixed(2);       
-    }else{//if your input is not a number
+    }else{//if your input is not a number and not null
         display4.textContent = "Error: Enter a number"; 
     }
 }
