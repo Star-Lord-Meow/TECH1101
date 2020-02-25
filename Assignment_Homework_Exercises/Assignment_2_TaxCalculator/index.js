@@ -10,7 +10,10 @@ function submit() {
     const c = 150473;
     const d = 214368;
     let input1 = Number(document.getElementById("anyNumber1").value); //no need to declare a const = "anyNumber1" because you can call id right away from html. Lesson learned from your comment on my previous assignment.
-    if (input1 <= a){ //if input1 is less than 48535.
+    const empty = document.getElementById("anyNumber1").value;
+    if(empty == ""){//if your input is null
+        display4.textContent = "Error: Enter a number";
+    }else if (input1 <= a){ //if input1 is less than or = to 48535.
         const compu2 = (input1-0)*.15;
         const totalCompu = compu2 + 0;
         const etr = (totalCompu / input1) *100;
@@ -53,15 +56,14 @@ function submit() {
         const returnE = input1 - totalCompu;
         display.textContent = "$" + totalCompu.toFixed(2);
         display2.textContent = etr.toFixed(2);
-        display3.textContent = "$" + returnE.toFixed(2);
+        display3.textContent = "$" + returnE.toFixed(2);       
     }else{//if your input is not a number
-        display4.textContent = "Error: Enter a number";
+        display4.textContent = "Error: Enter a number"; 
     }
 }
 SubmitBut.addEventListener("click", submit);
 
 function clearFn() {
-  //  window.location.reload(); //reloads full page
   document.querySelector("#anyNumber1").value = null;
   display.textContent = null;
   display2.textContent = null;
